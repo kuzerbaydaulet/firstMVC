@@ -35,7 +35,7 @@ public class MainController {
 
             //Flying Saucer part
             ITextRenderer renderer = new ITextRenderer();
-            renderer.getFontResolver().addFont("fonts/ARIALUNI.TTF", BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
+
             renderer.setDocument(url);
             renderer.layout();
             renderer.createPDF(out);
